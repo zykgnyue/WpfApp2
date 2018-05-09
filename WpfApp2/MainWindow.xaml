@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded"  SizeChanged="Window_SizeChanged">
+    <StackPanel x:Name="diapPanelArea"  Margin="0,0,2,0" Width="790" SizeChanged="diapPanelArea_SizeChanged">
+        <Button x:Name="Ok" Click="Ok_Click" Width="Auto">
+            Tell Me
+        </Button>
+        <TextBlock x:Name="textBlockMsg" HorizontalAlignment="Center" Width="Auto">
+
+        </TextBlock>
+        <Button x:Name="btnTest" Click="btnTest_Click_1" MouseMove="btnTest_MouseMove">
+            I am Xaml Button
+        </Button>
+
+        <Canvas x:Name="canvasGraph" Background="White"
+                Height="200"
+                Width="Auto"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                SizeChanged="canvasGraph_SizeChanged"/>
+        
+    </StackPanel>
+</Window>
